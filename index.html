@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YOLO</title>
+  <style type="text/css" media="screen">
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 50px;
+      color: #000;
+      padding: 20px;
+    }
+    button {
+      font-size: 40px;
+      border-radius: 0.25em;
+      padding: 0.25em 1em;
+      background: pink;
+      border: 0;
+    }
+    h1 {
+      font-size: 200px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button>Click me!</button>
+  <div class="stuff hidden">
+    <h1>YOLO</h1>
+  </div>
+  <script>
+    var elButton = document.querySelector('button');
+    var elStuff = document.querySelector('.stuff');
+
+    elButton.onclick = function () {
+      elStuff.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
