@@ -4,7 +4,7 @@
   "description": "The best app ever.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "phantomjs test/run.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/gvn/yolo/issues"
   },
-  "homepage": "https://github.com/gvn/yolo"
+  "homepage": "https://github.com/gvn/yolo",
+  "devDependencies": {
+    "mofo-phantom": "1.1.1"
+  }
 }
